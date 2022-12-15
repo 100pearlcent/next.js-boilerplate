@@ -1,5 +1,5 @@
 import { RefObject, useEffect, useRef } from 'react'
-import useIdenticalLayoutEffect from './useIdenticalLayoutEffect'
+import { useIdenticalLayoutEffect } from './index'
 
 function useEventListener<K extends keyof MediaQueryListEventMap>(
   eventName: K,
