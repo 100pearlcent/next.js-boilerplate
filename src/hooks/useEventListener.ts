@@ -1,5 +1,5 @@
 import { RefObject, useEffect, useRef } from 'react'
-import { useIdenticalLayoutEffect } from './index'
+import { useIsomorphicLayoutEffect } from './index'
 
 function useEventListener<K extends keyof MediaQueryListEventMap>(
   eventName: K,
@@ -51,7 +51,7 @@ function useEventListener<
 ) {
   const savedHandler = useRef(handler)
 
-  useIdenticalLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     savedHandler.current = handler
   }, [handler])
 

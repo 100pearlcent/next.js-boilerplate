@@ -1,6 +1,6 @@
 import { isCSR } from '@/utils/Indicator'
 import { useState } from 'react'
-import { useEventListener, useIdenticalLayoutEffect } from './index'
+import { useEventListener, useIsomorphicLayoutEffect } from './index'
 
 function useScreen() {
   const getScreen = () => {
@@ -18,7 +18,7 @@ function useScreen() {
 
   useEventListener('resize', handleSize)
 
-  useIdenticalLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     handleSize()
   }, [])
 
