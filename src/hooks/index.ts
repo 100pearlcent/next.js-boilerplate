@@ -1,6 +1,8 @@
 export { default as useClickDetected } from './useClickDetected'
 export { default as useCopyToClipboard } from './useCopyToClipboard'
+export { default as useCounter } from './useCounter'
 export { default as useDebounce } from './useDebounce'
+export { default as useDocumentTitle } from './useDocumentTitle'
 export { default as useEventListener } from './useEventListener'
 export { default as useIsomorphicLayoutEffect } from './useIsomorphicLayoutEffect'
 export { default as useScreen } from './useScreen'
